@@ -1,6 +1,12 @@
+<<<<<<< Updated upstream
 /* SETUP-BE | 1.0.0 | 200513 | assets/scss/main.scss
 ---------------------------------------------------------------------------------------------------- */
 /* SETUP-BE | 1.0.0 | 200505 | assets/scss/partials/base.scss
+=======
+/* SETUP-BE | 1.0.1 | 200624 | assets/scss/main.scss
+---------------------------------------------------------------------------------------------------- */
+/* SETUP-BE | 1.0.1 | 200624 | assets/scss/partials/base.scss
+>>>>>>> Stashed changes
 ---------------------------------------------------------------------------------------------------- */
 /**
  * Brand Color
@@ -1357,22 +1363,44 @@ div.wpforms-container.one-line:after {
   .header-search:not(.active) {
     display: none; }
 
+<<<<<<< Updated upstream
 /* SETUP-BE | 1.0.0 | 200526 | assets/scss/partials/post-summary.scss
 ---------------------------------------------------------------------------------------------------- */
 .item.image {
   display: block; }
   .module.post-summary .item.image img {
     margin-bottom: 1rem; }
+=======
+/* SETUP-BE | 1.0.1 | 200626 | assets/scss/partials/post-summary.scss
+---------------------------------------------------------------------------------------------------- */
+.module.post-summary .item.image {
+  display: block;
+  margin-bottom: 1rem; }
+  .module.post-summary .item.image .item.img {
+    margin-bottom: 0; }
+>>>>>>> Stashed changes
 
 .module.post-summary .item.img {
   margin-bottom: 1rem; }
 
+<<<<<<< Updated upstream
 .item.overline {
+=======
+.module.post-summary .item.bgimage {
+  display: block;
+  margin-bottom: 1rem;
+  background-size: cover;
+  background-position: center;
+  padding-top: calc(200 / 300 * 100%); }
+
+.module.post-summary .item.overline {
+>>>>>>> Stashed changes
   font-size: 0.75rem;
   font-weight: 700;
   text-transform: uppercase;
   letter-spacing: 1px;
   margin-bottom: 4px; }
+<<<<<<< Updated upstream
   .item.overline a {
     color: #616161;
     text-decoration: none; }
@@ -1407,6 +1435,117 @@ div.wpforms-container.one-line:after {
 .module.post-summary .items.date_vbar_author_name {
   margin-top: 1rem; }
 
+=======
+  .module.post-summary .item.overline a {
+    color: #616161;
+    text-decoration: none; }
+    .module.post-summary .item.overline a:hover {
+      color: #0079bf; }
+
+.module.x3 .item.overline {
+  font-size: 0.875rem; }
+
+.module.x4 .item.overline {
+  font-size: 0.875rem; }
+  @media (min-width: 768px) {
+    .module.x4 .item.overline {
+      font-size: 1rem; } }
+.module.x5 .item.overline {
+  font-size: 0.875rem; }
+  @media (min-width: 768px) {
+    .module.x5 .item.overline {
+      font-size: 1rem; } }
+.module.post-summary .item.title {
+  font-size: 1.125rem;
+  font-weight: 500;
+  margin-bottom: 2px; }
+  @media (min-width: 768px) {
+    .module.post-summary .item.title {
+      font-size: 1.25rem; } }
+  .module.post-summary .item.title a {
+    color: #212121;
+    text-decoration: none; }
+    .module.post-summary .item.title a:hover {
+      color: #0079bf; }
+
+.module.x2 .item.title {
+  font-size: 1.25rem; }
+  @media (min-width: 768px) {
+    .module.x2 .item.title {
+      font-size: 1.375rem; } }
+  @media (min-width: 992px) {
+    .module.x2 .item.title {
+      font-size: 1.5rem; } }
+.module.x3 .item.title {
+  font-size: 1.5rem; }
+  @media (min-width: 768px) {
+    .module.x3 .item.title {
+      font-size: 1.875rem; } }
+  @media (min-width: 992px) {
+    .module.x3 .item.title {
+      font-size: 2.25rem; } }
+.module.x4 .item.title {
+  font-size: 2.25rem; }
+  @media (min-width: 768px) {
+    .module.x4 .item.title {
+      font-size: 2.625rem; } }
+  @media (min-width: 992px) {
+    .module.x4 .item.title {
+      font-size: 3rem; } }
+.module.x5 .item.title {
+  font-size: 3.25rem; }
+  @media (min-width: 768px) {
+    .module.x5 .item.title {
+      font-size: 3.625rem; } }
+  @media (min-width: 992px) {
+    .module.x5 .item.title {
+      font-size: 4rem; } }
+.module.post-summary .item.author, .module.post-summary .item.date, .module.post-summary .item.dateauthor {
+  margin-top: 1rem;
+  font-size: 0.875rem; }
+  .module.post-summary .item.author a, .module.post-summary .item.date a, .module.post-summary .item.dateauthor a {
+    color: #212121;
+    text-decoration: none; }
+    .module.post-summary .item.author a:hover, .module.post-summary .item.date a:hover, .module.post-summary .item.dateauthor a:hover {
+      color: #0079bf; }
+
+.module.x3 .item.author, .module.x3 .item.date, .module.x3 .item.dateauthor {
+  font-size: 0.875rem; }
+  @media (min-width: 768px) {
+    .module.x3 .item.author, .module.x3 .item.date, .module.x3 .item.dateauthor {
+      font-size: 1rem; } }
+.module.x4 .item.author, .module.x4 .item.date, .module.x4 .item.dateauthor {
+  font-size: 0.875rem; }
+  @media (min-width: 768px) {
+    .module.x4 .item.author, .module.x4 .item.date, .module.x4 .item.dateauthor {
+      font-size: 1rem; } }
+.module.x5 .item.author, .module.x5 .item.date, .module.x5 .item.dateauthor {
+  font-size: 1rem; }
+  @media (min-width: 768px) {
+    .module.x5 .item.author, .module.x5 .item.date, .module.x5 .item.dateauthor {
+      font-size: 1.125rem; } }
+/**
+ * Need to fix gravatar styles eventually
+ */
+.module.post-summary .item.excerpt {
+  font-size: 1rem; }
+
+.module.x3 .item.excerpt {
+  font-size: 1rem; }
+  @media (min-width: 768px) {
+    .module.x3 .item.excerpt {
+      font-size: 1.125rem; } }
+.module.x4 .item.excerpt {
+  font-size: 1rem; }
+  @media (min-width: 768px) {
+    .module.x4 .item.excerpt {
+      font-size: 1.125rem; } }
+.module.x5 .item.excerpt {
+  font-size: 1.125rem; }
+  @media (min-width: 768px) {
+    .module.x5 .item.excerpt {
+      font-size: 1.25rem; } }
+>>>>>>> Stashed changes
 .item.edit a {
   font-size: 0.5rem;
   color: #fff;
@@ -1417,6 +1556,7 @@ div.wpforms-container.one-line:after {
   .item.edit a:hover {
     background-color: #0079bf; }
 
+<<<<<<< Updated upstream
 .post-summary .items.meta {
   font-size: 0.875rem;
   margin-top: 1rem; }
@@ -1430,6 +1570,8 @@ div.wpforms-container.one-line:after {
   .item.author.icon .gravatar {
     margin-right: 0.5rem; }
 
+=======
+>>>>>>> Stashed changes
 /* SETUP-BE | 1.0.0 | 200526 | assets/scss/partials/archive.scss
 ---------------------------------------------------------------------------------------------------- */
 .archive .site-main {
@@ -1602,8 +1744,11 @@ div.wpforms-container.one-line:after {
   .pagination .pagination-next.alignright {
     float: right; }
 
+<<<<<<< Updated upstream
 /* SETUP-BE | 1.0.0 | 200331 | assets/scss/partials/singular.scss
 ---------------------------------------------------------------------------------------------------- */
+=======
+>>>>>>> Stashed changes
 /* Singular
 ---------------------------------------------------------------------------------------------------- */
 /* Entry Content
@@ -2141,6 +2286,7 @@ div.wpforms-container.one-line:after {
 .wp-block-group.inner-container_tiny > .wp-block-group__inner-container, .wp-block-cover.inner-container_tiny > .wp-block-cover__inner-container, .maxwidth-tiny {
   max-width: 360px; }
 
+<<<<<<< Updated upstream
 /* SETUP-BE | 1.0.0 | 200513 | setup-be/ui/setup-be-100/margin.scss
 ---------------------------------------------------------------------------------------------------- */
 .wp-block-group.inner-container_margin .wp-block-group__inner-container, .wp-block-cover.inner-container_margin .wp-block-cover__inner-container, .margin-top, .margin-y, .margin {
@@ -2183,6 +2329,65 @@ div.wpforms-container.one-line:after {
   margin-bottom: 3.125rem; }
 
 .full-width-content .wp-block-group.alignfull, .content .wp-block-group.alignfull, .wp-block-group.alignfull, .wp-block-group.margin-zero-y.alignfull, .wp-block-group.margin-zero-vertical.alignfull, .full-width-content .wp-block-cover.alignfull, .content .wp-block-cover.alignfull, .wp-block-cover.alignfull, .wp-block-cover.margin-zero-y.alignfull, .wp-block-cover.margin-zero-vertical.alignfull, .margin-zero-bottom, .margin-zero-y, .margin-zero {
+=======
+/* SETUP-BE | 1.0.1 | 200624 | setup-be/ui/setup-be-101/margin.scss
+---------------------------------------------------------------------------------------------------- */
+.wp-block-group.inner-container_margin .wp-block-group__inner-container, .wp-block-cover.inner-container_margin .wp-block-cover__inner-container, .spacer.spacer-y, .margin-top, .margin-y, .margin {
+  margin-top: 1rem; }
+
+.spacer-tiny.spacer-y, .margin-tiny-top, .margin-tiny {
+  margin-top: 0.25rem; }
+
+.spacer-small.spacer-y, .margin-small-top, .margin-small {
+  margin-top: 0.5rem; }
+
+.spacer-medium.spacer-y, .margin-medium-top, .margin-medium {
+  margin-top: 1.5rem; }
+
+.spacer-large.spacer-y, .margin-large-top, .margin-large {
+  margin-top: 2rem; }
+
+.spacer-large2x.spacer-y {
+  margin-top: 4rem; }
+
+.spacer-huge.spacer-y, .margin-huge-top, .margin-huge {
+  margin-top: 3.125rem; }
+
+.spacer-huge2x.spacer-y {
+  margin-top: 6.25rem; }
+
+.full-width-content .wp-block-group.alignfull, .content .wp-block-group.alignfull, .wp-block-group.alignfull, .wp-block-group.margin-zero-y.alignfull, .wp-block-group.margin-zero-vertical.alignfull, .full-width-content .wp-block-cover.alignfull, .content .wp-block-cover.alignfull, .wp-block-cover.alignfull, .wp-block-cover.margin-zero-y.alignfull, .wp-block-cover.margin-zero-vertical.alignfull, .spacer-huge2x.spacer-in.spacer-y, .spacer-huge.spacer-in.spacer-y, .spacer-larger.spacer-in.spacer-y, .spacer-large2x.spacer-in.spacer-y, .spacer-large.spacer-in.spacer-y, .spacer-medium.spacer-in.spacer-y, .spacer.spacer-in.spacer-y, .spacer-small.spacer-in.spacer-y, .spacer-tiny.spacer-in.spacer-y, .spacer-zero.spacer-y, .margin-zero-top, .margin-zero-y, .margin-zero {
+  margin-top: 0; }
+
+.wp-block-group.inner-container_margin .wp-block-group__inner-container, .wp-block-cover.inner-container_margin .wp-block-cover__inner-container, .spacer, .margin-bottom, .margin {
+  margin-bottom: 1rem; }
+
+.spacer-tiny, .margin-tiny-bottom, .margin-tiny {
+  margin-bottom: 0.25rem; }
+
+.spacer-small, .margin-small-bottom, .margin-small {
+  margin-bottom: 0.5rem; }
+
+.spacer-medium, .margin-medium-bottom, .margin-medium {
+  margin-bottom: 1.5rem; }
+
+.spacer-large, .margin-large-bottom, .margin-large {
+  margin-bottom: 2rem; }
+
+.spacer-large2x, .margin-large2x-bottom {
+  margin-bottom: 4rem; }
+
+.spacer-larger {
+  margin-bottom: 2.5rem; }
+
+.spacer-huge, .margin-huge-bottom, .margin-huge {
+  margin-bottom: 3.125rem; }
+
+.spacer-huge2x, .margin-huge2x-bottom {
+  margin-bottom: 6.25rem; }
+
+.full-width-content .wp-block-group.alignfull, .content .wp-block-group.alignfull, .wp-block-group.alignfull, .wp-block-group.margin-zero-y.alignfull, .wp-block-group.margin-zero-vertical.alignfull, .full-width-content .wp-block-cover.alignfull, .content .wp-block-cover.alignfull, .wp-block-cover.alignfull, .wp-block-cover.margin-zero-y.alignfull, .wp-block-cover.margin-zero-vertical.alignfull, .spacer-huge2x.spacer-in, .spacer-huge.spacer-in, .spacer-larger.spacer-in, .spacer-large2x.spacer-in, .spacer-large.spacer-in, .spacer-medium.spacer-in, .spacer.spacer-in, .spacer-small.spacer-in, .spacer-tiny.spacer-in, .spacer-zero.spacer-in, .spacer-zero, .margin-zero-bottom, .margin-zero-y, .margin-zero {
+>>>>>>> Stashed changes
   margin-bottom: 0; }
 
 .wp-block-group.inner-container_margin .wp-block-group__inner-container, .wp-block-cover.inner-container_margin .wp-block-cover__inner-container, .margin-left, .margin-x, .margin {
@@ -2227,6 +2432,7 @@ div.wpforms-container.one-line:after {
 .margin-zero-right, .margin-zero-x, .margin-zero {
   margin-right: 0; }
 
+<<<<<<< Updated upstream
 /* SETUP-BE | 1.0.0 | 200513 | setup-be/ui/setup-be-100/margin-all.scss
 ---------------------------------------------------------------------------------------------------- */
 /* SETUP-BE | 1.0.0 | 200513 | setup-be/ui/setup-be-100/padding.scss
@@ -2270,6 +2476,63 @@ div.wpforms-container.one-line:after {
 .padding-huge-bottom, .padding-huge {
   padding-bottom: 3.125rem; }
 
+=======
+/* SETUP-BE | 1.0.1 | 200624 | setup-be/ui/setup-be-101/margin-all.scss
+---------------------------------------------------------------------------------------------------- */
+/* SETUP-BE | 1.0.1 | 200624 | setup-be/ui/setup-be-101/padding.scss
+---------------------------------------------------------------------------------------------------- */
+.wp-block-group.inner-container_padding .wp-block-group__inner-container, .wp-block-cover.inner-container_padding .wp-block-cover__inner-container, .spacer.spacer-in.spacer-y, .padding-top, .padding-y, .padding {
+  padding-top: 1rem; }
+
+.spacer-tiny.spacer-in.spacer-y, .padding-tiny-top, .padding-tiny {
+  padding-top: 0.25rem; }
+
+.spacer-small.spacer-in.spacer-y, .padding-small-top, .padding-small {
+  padding-top: 0.5rem; }
+
+.spacer-medium.spacer-in.spacer-y, .padding-medium-top, .padding-medium {
+  padding-top: 1.5rem; }
+
+.spacer-large.spacer-in.spacer-y, .padding-large-top, .padding-large {
+  padding-top: 2rem; }
+
+.spacer-large2x.spacer-in.spacer-y {
+  padding-top: 4rem; }
+
+.spacer-huge.spacer-in.spacer-y, .padding-huge-top, .padding-huge {
+  padding-top: 3.125rem; }
+
+.spacer-huge2x.spacer-in.spacer-y {
+  padding-top: 6.25rem; }
+
+.padding-zero-top, .padding-zero-y, .padding-zero {
+  padding-top: 0; }
+
+.wp-block-group.inner-container_padding .wp-block-group__inner-container, .wp-block-cover.inner-container_padding .wp-block-cover__inner-container, .spacer.spacer-in, .padding-bottom, .padding {
+  padding-bottom: 1rem; }
+
+.spacer-tiny.spacer-in, .padding-tiny-bottom, .padding-tiny {
+  padding-bottom: 0.25rem; }
+
+.spacer-small.spacer-in, .padding-small-bottom, .padding-small {
+  padding-bottom: 0.5rem; }
+
+.spacer-medium.spacer-in, .padding-medium-bottom, .padding-medium {
+  padding-bottom: 1.5rem; }
+
+.spacer-large.spacer-in, .padding-large-bottom, .padding-large {
+  padding-bottom: 2rem; }
+
+.spacer-large2x.spacer-in, .padding-large2x-bottom {
+  padding-bottom: 4rem; }
+
+.spacer-huge.spacer-in, .padding-huge-bottom, .padding-huge {
+  padding-bottom: 3.125rem; }
+
+.spacer-huge2x.spacer-in, .padding-huge2x-bottom {
+  padding-bottom: 6.25rem; }
+
+>>>>>>> Stashed changes
 .padding-zero-bottom, .padding-zero-y, .padding-zero {
   padding-bottom: 0; }
 
@@ -2315,7 +2578,13 @@ div.wpforms-container.one-line:after {
 .padding-zero-right, .padding-zero-x, .padding-zero {
   padding-right: 0; }
 
+<<<<<<< Updated upstream
 /* SETUP-BE | 1.0.0 | 200513 | setup-be/ui/setup-be-100/padding-all.scss
+=======
+/* SETUP-BE | 1.0.1 | 200624 | setup-be/ui/setup-be-101/padding-all.scss
+---------------------------------------------------------------------------------------------------- */
+/* SETUP-BE | 1.0.1 | 200624 | setup-be/ui/setup-be-101/spacer.scss
+>>>>>>> Stashed changes
 ---------------------------------------------------------------------------------------------------- */
 /* SETUP-BE | 1.0.0 | 200514 | setup-be/ui/setup-be-100/shadow.scss
 ---------------------------------------------------------------------------------------------------- */
@@ -2460,7 +2729,11 @@ a.shadow:link {
       margin-left: calc( ( 768px - 360px ) / 2);
       max-width: 360px;
       width: 360px; } }
+<<<<<<< Updated upstream
 /* SETUP-BE | 1.0.0 | 200501 | setup-be/block/setup-be-100/cover.scss
+=======
+/* SETUP-BE | 1.0.0 | 200623 | setup-be/block/setup-be-100/cover.scss
+>>>>>>> Stashed changes
 ---------------------------------------------------------------------------------------------------- */
 .wp-block-cover.fullscreen {
   height: 100vh; }
@@ -2480,6 +2753,12 @@ a.shadow:link {
   margin-inline-start: 0;
   margin-inline-end: 0; }
 
+<<<<<<< Updated upstream
+=======
+.wp-block-cover.minheight-zero {
+  min-height: unset; }
+
+>>>>>>> Stashed changes
 /* SETUP-BE | 1.0.0 | 200408 | setup-be/block/setup-be-100/group.scss
 ---------------------------------------------------------------------------------------------------- */
 .wp-block-group.fullscreen {
@@ -2504,6 +2783,7 @@ a.shadow:link {
 ---------------------------------------------------------------------------------------------------- */
 ul.blocks-gallery-grid {
   padding-left: 0; }
+<<<<<<< Updated upstream
 
 /* SETUP-BE | 1.0.0 | 200413 | setup-be/guide/setup-be-100/label.scss
 ---------------------------------------------------------------------------------------------------- */
@@ -2539,3 +2819,5 @@ ul.blocks-gallery-grid {
 .guide-highlight2 {
   padding-left: 10px;
   border-left: 5px solid #eee; }
+=======
+>>>>>>> Stashed changes

@@ -1,4 +1,4 @@
-/* SETUP-BE | 1.0.0 | 200601 | assets/scss/partials/post-summary.scss
+/* SETUP-BE | 1.0.1 | 200626 | assets/scss/partials/post-summary.scss
 ---------------------------------------------------------------------------------------------------- */
 
 
@@ -6,26 +6,53 @@
 //
 
 .module.post-summary {}
+.module.post-summary.x2 {}
+.module.post-summary.x3 {}
+.module.post-summary.x4 {}
+.module.post-summary.x5 {}
 
 
-// FEATURED IMAGE
+// IMAGE
 //
 // setup_be_image();
 // setup_be_image_nolink();
 
 .item.image {
-	display: block;
-
 	.module.post-summary & {
-		img {
-			margin-bottom: 1rem;
+		display: block;
+		margin-bottom: 1rem;
+		img {}
+		.item.img {
+			margin-bottom: 0;
 		}
 	}
 }
+a.item.image.link {
+	.module.post-summary & {}
+}
 .item.img {
-
 	.module.post-summary & {
 		margin-bottom: 1rem;
+	}
+}
+
+// BGIMAGE
+//
+// setup_be_bgimage();
+// setup_be_bgimage_nolink();
+
+.item.bgimage {
+	.module.post-summary & {
+		display: block;
+		margin-bottom: 1rem;
+		background-size: cover;
+		background-position: center;
+		padding-top: calc(200 / 300 * 100%);
+	}
+}
+a.item.bgimage.link {
+	.module.post-summary & {
+		&:hover {}
 	}
 }
 
@@ -36,22 +63,35 @@
 // setup_be_overline_nolink();
 
 .item.overline {
-	font-size: 0.75rem;
-	font-weight: 700;
-	text-transform: uppercase;
-	letter-spacing: 1px;
-	margin-bottom: 4px;
 
-	a {
-		color: $grey_8;
-		text-decoration: none;
+	.module.post-summary & {
+		font-size: 0.75rem;
+		font-weight: 700;
+		text-transform: uppercase;
+		letter-spacing: 1px;
+		margin-bottom: 4px;
 
-		&:hover {
-			color: $highlight;
+		a {
+			color: $grey_8;
+			text-decoration: none;
+
+			&:hover {
+				color: $highlight;
+			}
 		}
 	}
 
-	.module.post-summary & {}
+	.module.x2 & {}
+	.module.x3 & {
+		font-size: 0.875rem;
+	}
+	.module.x4 & {
+		@include font-sizes( 0.875rem, 1rem );
+	}
+	.module.x5 & {
+		@include font-sizes( 0.875rem, 1rem );
+	}
+
 }
 
 
@@ -61,21 +101,69 @@
 // setup_be_title_nolink() {;
 
 .item.title {
-	font-size: 1.25rem;
-	font-weight: 500;
-	margin: 0;
 
-	a {
-		color: $grey_10;
-		text-decoration: none;
+	.module.post-summary & {
+		@include font-sizes( 1.125rem, 1.25rem );
+		font-weight: 500;
+		margin-bottom: 2px;
 
-		&:hover {
-			color: $highlight;
+		a {
+			color: $grey_10;
+			text-decoration: none;
+
+			&:hover {
+				color: $highlight;
+			}
 		}
 	}
 
-	.module.post-summary & {}
+	.module.x2 & {
+		@include font-sizes( 1.25rem, 1.375rem, 1.5rem );
+	}
+	.module.x3 & {
+		@include font-sizes( 1.5rem, 1.875rem, 2.25rem );
+	}
+	.module.x4 & {
+		@include font-sizes( 2.25rem, 2.625rem, 3rem );
+	}
+	.module.x5 & {
+		@include font-sizes( 3.25rem, 3.625rem, 4rem );
+	}
 }
+
+
+// AUTHOR, DATE, DATEAUTHOR
+
+.item.author,
+.item.date,
+.item.dateauthor {
+
+	.module.post-summary & {
+		margin-top: 1rem;
+		font-size: 0.875rem;
+
+		a {
+			color: $grey_10;
+			text-decoration: none;
+
+			&:hover {
+				color: $highlight;
+			}
+		}
+	}
+
+	.module.x2 & {}
+	.module.x3 & {
+		@include font-sizes( 0.875rem, 1rem );
+	}
+	.module.x4 & {
+		@include font-sizes( 0.875rem, 1rem );
+	}
+	.module.x5 & {
+		@include font-sizes( 1rem, 1.125rem );
+	}
+}
+
 
 
 // AUTHOR
@@ -86,8 +174,6 @@
 // setup_be_author_gravatar_by_name() {;
 
 .item.author {
-	font-size: 0.875rem;
-
 	.module.post-summary & {}
 }
 /**
@@ -101,8 +187,16 @@
 // setup_be_date_weekday_mdy() {;
 
 .item.date {
-	font-size: 0.875rem;
+	.module.post-summary & {}
+}
 
+
+// DATE & AUTHOR (ITEMS)
+// 
+// setup_be_date_by_author_name();
+// setup_be_date_vbar_author_name();
+
+.item.dateauthor {
 	.module.post-summary & {}
 }
 
@@ -113,25 +207,20 @@
 // setup_be_excerpt_maxwords();
 
 .item.excerpt {
-	font-size: 1rem;
-
-	.module.post-summary & {}
-}
-
-
-// DATE & AUTHOR (ITEMS)
-// 
-// setup_be_date_by_author_name();
-// setup_be_date_vbar_author_name();
-
-.items.date_vbar_author_name {
-
-	.item.vbar {
-		font-size: 0.875rem;
-	}
 
 	.module.post-summary & {
-		margin-top: 1rem;
+		font-size: 1rem;
+	}
+
+	.module.x2 & {}
+	.module.x3 & {
+		@include font-sizes( 1rem, 1.125rem );
+	}
+	.module.x4 & {
+		@include font-sizes( 1rem, 1.125rem );
+	}
+	.module.x5 & {
+		@include font-sizes( 1.125rem, 1.25rem );
 	}
 }
 
@@ -154,37 +243,5 @@
 			background-color: $highlight;
 		}
 
-	}
-}
-
-
-
-
-
-.items.meta {
-	.post-summary & {
-		font-size: 0.875rem;
-		margin-top: 1rem;
-	}
-}
-.item.date {
-	.post-summary & {}
-	.post-summary .items.meta & {}
-}
-
-
-// AUTHOR ICON
-
-.item.author.icon {
-	display: flex;
-	justify-content: flex-start;
-	align-items: center;
-
-	img {
-		//display: inline;
-		border-radius: 50%;
-	}
-	.gravatar {
-		margin-right: 0.5rem;
 	}
 }

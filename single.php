@@ -9,8 +9,8 @@
 **/
 
 // Entry category in header
-add_action( 'genesis_entry_header', 'ea_entry_category', 8 );
-add_action( 'genesis_entry_header', 'ea_entry_author', 12 );
+add_action( 'genesis_entry_header', 'setup_be_overline', 8 );
+add_action( 'genesis_entry_header', 'setup_be_dateauthor', 12 );
 add_action( 'genesis_entry_header', 'ea_entry_header_share', 13 );
 
 /**

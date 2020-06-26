@@ -1,4 +1,8 @@
+<<<<<<< Updated upstream
 /* SETUP-BE | 1.0.0 | 200505 | assets/scss/partials/base.scss
+=======
+/* SETUP-BE | 1.0.1 | 200624 | assets/scss/partials/base.scss
+>>>>>>> Stashed changes
 ---------------------------------------------------------------------------------------------------- */
 /**
  * Brand Color
@@ -626,22 +630,44 @@ div.wpforms-container.one-line:after {
 .shared-counts-wrap.style-button .shared-counts-count {
   display: none; }
 
+<<<<<<< Updated upstream
 /* SETUP-BE | 1.0.0 | 200526 | assets/scss/partials/post-summary.scss
 ---------------------------------------------------------------------------------------------------- */
 .item.image {
   display: block; }
   .module.post-summary .item.image img {
     margin-bottom: 1rem; }
+=======
+/* SETUP-BE | 1.0.1 | 200626 | assets/scss/partials/post-summary.scss
+---------------------------------------------------------------------------------------------------- */
+.module.post-summary .item.image {
+  display: block;
+  margin-bottom: 1rem; }
+  .module.post-summary .item.image .item.img {
+    margin-bottom: 0; }
+>>>>>>> Stashed changes
 
 .module.post-summary .item.img {
   margin-bottom: 1rem; }
 
+<<<<<<< Updated upstream
 .item.overline {
+=======
+.module.post-summary .item.bgimage {
+  display: block;
+  margin-bottom: 1rem;
+  background-size: cover;
+  background-position: center;
+  padding-top: calc(200 / 300 * 100%); }
+
+.module.post-summary .item.overline {
+>>>>>>> Stashed changes
   font-size: 0.75rem;
   font-weight: 700;
   text-transform: uppercase;
   letter-spacing: 1px;
   margin-bottom: 4px; }
+<<<<<<< Updated upstream
   .item.overline a {
     color: #616161;
     text-decoration: none; }
@@ -676,6 +702,117 @@ div.wpforms-container.one-line:after {
 .module.post-summary .items.date_vbar_author_name {
   margin-top: 1rem; }
 
+=======
+  .module.post-summary .item.overline a {
+    color: #616161;
+    text-decoration: none; }
+    .module.post-summary .item.overline a:hover {
+      color: #0079bf; }
+
+.module.x3 .item.overline {
+  font-size: 0.875rem; }
+
+.module.x4 .item.overline {
+  font-size: 0.875rem; }
+  @media (min-width: 768px) {
+    .module.x4 .item.overline {
+      font-size: 1rem; } }
+.module.x5 .item.overline {
+  font-size: 0.875rem; }
+  @media (min-width: 768px) {
+    .module.x5 .item.overline {
+      font-size: 1rem; } }
+.module.post-summary .item.title {
+  font-size: 1.125rem;
+  font-weight: 500;
+  margin-bottom: 2px; }
+  @media (min-width: 768px) {
+    .module.post-summary .item.title {
+      font-size: 1.25rem; } }
+  .module.post-summary .item.title a {
+    color: #212121;
+    text-decoration: none; }
+    .module.post-summary .item.title a:hover {
+      color: #0079bf; }
+
+.module.x2 .item.title {
+  font-size: 1.25rem; }
+  @media (min-width: 768px) {
+    .module.x2 .item.title {
+      font-size: 1.375rem; } }
+  @media (min-width: 992px) {
+    .module.x2 .item.title {
+      font-size: 1.5rem; } }
+.module.x3 .item.title {
+  font-size: 1.5rem; }
+  @media (min-width: 768px) {
+    .module.x3 .item.title {
+      font-size: 1.875rem; } }
+  @media (min-width: 992px) {
+    .module.x3 .item.title {
+      font-size: 2.25rem; } }
+.module.x4 .item.title {
+  font-size: 2.25rem; }
+  @media (min-width: 768px) {
+    .module.x4 .item.title {
+      font-size: 2.625rem; } }
+  @media (min-width: 992px) {
+    .module.x4 .item.title {
+      font-size: 3rem; } }
+.module.x5 .item.title {
+  font-size: 3.25rem; }
+  @media (min-width: 768px) {
+    .module.x5 .item.title {
+      font-size: 3.625rem; } }
+  @media (min-width: 992px) {
+    .module.x5 .item.title {
+      font-size: 4rem; } }
+.module.post-summary .item.author, .module.post-summary .item.date, .module.post-summary .item.dateauthor {
+  margin-top: 1rem;
+  font-size: 0.875rem; }
+  .module.post-summary .item.author a, .module.post-summary .item.date a, .module.post-summary .item.dateauthor a {
+    color: #212121;
+    text-decoration: none; }
+    .module.post-summary .item.author a:hover, .module.post-summary .item.date a:hover, .module.post-summary .item.dateauthor a:hover {
+      color: #0079bf; }
+
+.module.x3 .item.author, .module.x3 .item.date, .module.x3 .item.dateauthor {
+  font-size: 0.875rem; }
+  @media (min-width: 768px) {
+    .module.x3 .item.author, .module.x3 .item.date, .module.x3 .item.dateauthor {
+      font-size: 1rem; } }
+.module.x4 .item.author, .module.x4 .item.date, .module.x4 .item.dateauthor {
+  font-size: 0.875rem; }
+  @media (min-width: 768px) {
+    .module.x4 .item.author, .module.x4 .item.date, .module.x4 .item.dateauthor {
+      font-size: 1rem; } }
+.module.x5 .item.author, .module.x5 .item.date, .module.x5 .item.dateauthor {
+  font-size: 1rem; }
+  @media (min-width: 768px) {
+    .module.x5 .item.author, .module.x5 .item.date, .module.x5 .item.dateauthor {
+      font-size: 1.125rem; } }
+/**
+ * Need to fix gravatar styles eventually
+ */
+.module.post-summary .item.excerpt {
+  font-size: 1rem; }
+
+.module.x3 .item.excerpt {
+  font-size: 1rem; }
+  @media (min-width: 768px) {
+    .module.x3 .item.excerpt {
+      font-size: 1.125rem; } }
+.module.x4 .item.excerpt {
+  font-size: 1rem; }
+  @media (min-width: 768px) {
+    .module.x4 .item.excerpt {
+      font-size: 1.125rem; } }
+.module.x5 .item.excerpt {
+  font-size: 1.125rem; }
+  @media (min-width: 768px) {
+    .module.x5 .item.excerpt {
+      font-size: 1.25rem; } }
+>>>>>>> Stashed changes
 .item.edit a {
   font-size: 0.5rem;
   color: #fff;
@@ -686,6 +823,7 @@ div.wpforms-container.one-line:after {
   .item.edit a:hover {
     background-color: #0079bf; }
 
+<<<<<<< Updated upstream
 .post-summary .items.meta {
   font-size: 0.875rem;
   margin-top: 1rem; }
@@ -699,6 +837,8 @@ div.wpforms-container.one-line:after {
   .item.author.icon .gravatar {
     margin-right: 0.5rem; }
 
+=======
+>>>>>>> Stashed changes
 body, p {
   color: #424242;
   font-family: "Rubik", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen-Sans, Ubuntu, Cantarell, "Helvetica Neue", sans-serif;

@@ -1,4 +1,4 @@
-/* SETUP-BE | 1.0.2 | 200821 | assets/scss/partials/site-footer.scss
+/* SETUP-BE | 1.0.2 | 200824 | assets/scss/partials/site-footer.scss
 ---------------------------------------------------------------------------------------------------- */
 
 /* Footer Widgets
@@ -136,6 +136,10 @@
 		justify-content: center;
 		flex-wrap: wrap;
 		flex-direction: column;
+
+		@include media("<=medium") {
+			text-align: center;
+		}
 
 		.info {
 			align-self: center;

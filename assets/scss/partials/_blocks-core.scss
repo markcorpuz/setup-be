@@ -1,4 +1,4 @@
-/* SETUP-BE | 1.0.0 | 200505 | assets/scss/partials/blocks-core.scss
+/* SETUP-BE | 1.0.3 | 200923 | assets/scss/partials/blocks-core.scss
 ---------------------------------------------------------------------------------------------------- */
 
 /* Button
@@ -218,9 +218,12 @@ img {
 		color: $color;
 	}
 
-	.has-#{$name}-background-color {
+	.has-#{$name}-background-color,
+	.wp-block-cover-image.has-background-dim.has-#{$name}-background-color,
+	.wp-block-cover.has-background-dim.has-#{$name}-background-color {
 		background-color: $color;
 	}
+
 }
 
 /* Group

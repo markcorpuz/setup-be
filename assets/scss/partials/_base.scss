@@ -1,4 +1,4 @@
-/* SETUP-BE | 1.0.3 | 201007 | assets/scss/partials/base.scss
+/* SETUP-BE | 1.0.3 | 201016 | assets/scss/partials/base.scss
 ---------------------------------------------------------------------------------------------------- */
 
 // Colors
@@ -17,7 +17,9 @@ $black: #000;
 
 // Brand Colors
 $brand_colors: (
-  'blue'      : #0080ff,    // first color in array used for default button color
+  'purple'    : #660099,    // first color in array used for default button color
+  'blue'      : #0080ff,
+  'teal'      : #00ffff,
   'red'       : #FF0000,
   'orange'    : #ff7f00,
   'yellow'    : #f2d600,

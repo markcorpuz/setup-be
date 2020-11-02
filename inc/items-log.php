@@ -114,3 +114,59 @@ function setup_be_log_user() {
 	if( !empty( $log_user ) )
 		echo '<div class="item log user">' . $log_user . '</div>';
 }
+
+
+/**
+ * LINK (NO TITLE)
+ *
+ */
+
+function setup_be_log_link() {
+	$log_link = get_field( 'log_link' );
+	if( !empty( $log_link ) )
+		echo '<a href="' . $log_link . '" class="item log link">LINK</a>';
+
+	$internal_link = get_field( 'log_link' );
+	if( !empty( $internal_link ) ) {
+		echo '<a href="'.$internal_link.'" class="item log link">LINK</a>';
+	} else {
+		$external_link = get_field( 'log_link_internal' );
+		if( is_array( $external_link ) ) {
+			if( count( $rel_cta_entries ) > 1 ) {
+				echo '<div>Error: Log Link Internal should only have 1 entry.</div>';
+			} else {
+				foreach( $external_link as $val ) {
+					echo '<a href="'.get_the_permalink( $val ).'" class="item log link">LINK</a>';
+				}
+			}
+		}
+	}
+}
+
+
+/**
+ * LINK (DYNAMIC TITLE)
+ *
+ */
+
+function setup_be_log_link_dynamic() {
+	$log_link = get_field( 'log_link' );
+	if( !empty( $log_link ) )
+		echo '<a class="item log link" href="' . $log_link . '">LINK</a>';
+
+	$internal_link = get_field( 'log_link' );
+	if( !empty( $internal_link ) ) {
+		echo '<a class="item log link" href="'.$internal_link.'">'.$internal_link.'</a>';
+	} else {
+		$external_link = get_field( 'log_link_internal' );
+		if( is_array( $external_link ) ) {
+			if( count( $rel_cta_entries ) > 1 ) {
+				echo '<div>Log Link Internal should only have 1 entry.</div>';
+			} else {
+				foreach( $external_link as $val ) {
+					echo '<a class="item log link" href="'.get_the_permalink( $val ).'">'.get_the_title( $val ).'</a>';
+				}
+			}
+		}
+	}
+}

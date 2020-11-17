@@ -28,7 +28,7 @@
 function setup_be_log_date() {
 	$log_date = get_field( 'log_date' );
 	if( !empty( $log_date ) )
-		echo '<div class="item log date">' . date( 'd M Y', strtotime( $log_date ) ) . '</div>';	
+		return '<div class="item log date">' . date( 'd M Y', strtotime( $log_date ) ) . '</div>';	
 }
 
 
@@ -40,7 +40,7 @@ function setup_be_log_date() {
 function setup_be_log_time() {
 	$log_time = get_field( 'log_time' );
 	if( !empty( $log_time ) )
-		echo '<div class="item log code">' . date( 'd M Y', strtotime( $log_time ) ) . '</div>';	
+		return '<div class="item log code">' . date( 'd M Y', strtotime( $log_time ) ) . '</div>';	
 }
 
 
@@ -52,7 +52,7 @@ function setup_be_log_time() {
 function setup_be_log_code() {
 	$log_code = get_field( 'log_code' );
 	if( !empty( $log_code ) )
-		echo '<div class="item log code">' . $log_code . '</div>';
+		return '<div class="item log code">' . $log_code . '</div>';
 }
 
 
@@ -64,7 +64,7 @@ function setup_be_log_code() {
 function setup_be_log_label() {
 	$log_label = get_field( 'log_label' );
 	if( !empty( $log_label ) )
-		echo '<div class="item log label">' . $log_label . '</div>';
+		return '<div class="item log label">' . $log_label . '</div>';
 }
 
 
@@ -76,7 +76,7 @@ function setup_be_log_label() {
 function setup_be_log_title() {
 	$log_title = get_field( 'log_title' );
 	if( !empty( $log_title ) )
-		echo '<div class="item log title">' . $log_title . '</div>';
+		return '<div class="item log title">' . $log_title . '</div>';
 }
 
 
@@ -88,7 +88,7 @@ function setup_be_log_title() {
 function setup_be_log_summary() {
 	$log_summary = get_field( 'log_summary' );
 	if( !empty( $log_summary ) )
-		echo '<div class="item log summary">' . $log_summary . '</div>';
+		return '<div class="item log summary">' . $log_summary . '</div>';
 }
 
 
@@ -100,7 +100,7 @@ function setup_be_log_summary() {
 function setup_be_log_info() {
 	$log_info = get_field( 'log_info' );
 	if( !empty( $log_info ) )
-		echo '<div class="item log info">' . $log_info . '</div>';
+		return '<div class="item log info">' . $log_info . '</div>';
 }
 
 
@@ -112,7 +112,7 @@ function setup_be_log_info() {
 function setup_be_log_user() {
 	$log_user = get_field( 'log_user' );
 	if( !empty( $log_user ) )
-		echo '<div class="item log user">' . $log_user . '</div>';
+		return '<div class="item log user">' . $log_user . '</div>';
 }
 
 
@@ -122,25 +122,27 @@ function setup_be_log_user() {
  */
 
 function setup_be_log_link() {
+
+	// EXTERNAL LINK
 	$log_link = get_field( 'log_link' );
 	if( !empty( $log_link ) )
-		echo '<a href="' . $log_link . '" class="item log link">LINK</a>';
+		return '<a href="' . $log_link . '" class="item log link">LINK</a>';
 
-	$internal_link = get_field( 'log_link' );
-	if( !empty( $internal_link ) ) {
-		echo '<a href="'.$internal_link.'" class="item log link">LINK</a>';
-	} else {
-		$external_link = get_field( 'log_link_internal' );
-		if( is_array( $external_link ) ) {
-			if( count( $rel_cta_entries ) > 1 ) {
-				echo '<div>Error: Log Link Internal should only have 1 entry.</div>';
-			} else {
-				foreach( $external_link as $val ) {
-					echo '<a href="'.get_the_permalink( $val ).'" class="item log link">LINK</a>';
-				}
+
+	// INTERNAL LINK
+	/*$internal_link = get_field( 'log_link_internal' );
+	if( is_array( $internal_link ) ) {
+
+		if( count( $internal_link ) > 1 ) {
+			echo '<div>Error: Log Link Internal should only have 1 entry.</div>';
+		} else {
+			foreach( $internal_link as $val ) {
+				echo '<a href="'.get_the_permalink( $val ).'" class="item log link">LINK</a>';
 			}
 		}
-	}
+
+	}*/
+
 }
 
 
@@ -150,23 +152,85 @@ function setup_be_log_link() {
  */
 
 function setup_be_log_link_dynamic() {
+
+	// EXTERNAL LINK
 	$log_link = get_field( 'log_link' );
 	if( !empty( $log_link ) )
-		echo '<a class="item log link" href="' . $log_link . '">LINK</a>';
+		return '<a class="item log link" href="' . $log_link . '">'.get_the_title( $val ).'</a>';
 
-	$internal_link = get_field( 'log_link' );
-	if( !empty( $internal_link ) ) {
-		echo '<a class="item log link" href="'.$internal_link.'">'.$internal_link.'</a>';
-	} else {
-		$external_link = get_field( 'log_link_internal' );
-		if( is_array( $external_link ) ) {
-			if( count( $rel_cta_entries ) > 1 ) {
-				echo '<div>Log Link Internal should only have 1 entry.</div>';
-			} else {
-				foreach( $external_link as $val ) {
-					echo '<a class="item log link" href="'.get_the_permalink( $val ).'">'.get_the_title( $val ).'</a>';
-				}
+
+	// INTERNAL LINK
+	/*$internal_link = get_field( 'log_link_internal' );
+	if( is_array( $internal_link ) ) {
+
+		if( count( $internal_link ) > 1 ) {
+			echo '<div>Log Link Internal should only have 1 entry.</div>';
+		} else {
+			foreach( $internal_link as $val ) {
+				echo '<a class="item log link" href="'.get_the_permalink( $val ).'">'.get_the_title( $val ).'</a>';
 			}
 		}
+		
+	}*/
+
+}
+
+
+/**
+ * LINK EXTERNAL (NO TITLE)
+ *
+ */
+
+function setup_be_log_link_external() {
+
+	// EXTERNAL LINK
+	/*$log_link = get_field( 'log_link' );
+	if( !empty( $log_link ) )
+		echo '<a href="' . $log_link . '" class="item log link">LINK</a>';
+	*/
+
+	// INTERNAL LINK
+	$internal_link = get_field( 'log_link_internal' );
+	if( is_array( $internal_link ) ) {
+
+		if( count( $internal_link ) > 1 ) {
+			return '<div>Error: Log Link Internal should only have 1 entry.</div>';
+		} else {
+			foreach( $internal_link as $val ) {
+				return '<a href="'.get_the_permalink( $val ).'" class="item log link">LINK</a>';
+			}
+		}
+
 	}
+
+}
+
+
+/**
+ * LINK (DYNAMIC TITLE)
+ *
+ */
+
+function setup_be_log_link_external_dynamic() {
+
+	// EXTERNAL LINK
+	/*$log_link = get_field( 'log_link' );
+	if( !empty( $log_link ) )
+		echo '<a class="item log link" href="' . $log_link . '">LINK</a>';
+	*/
+
+	// INTERNAL LINK
+	$internal_link = get_field( 'log_link_internal' );
+	if( is_array( $internal_link ) ) {
+
+		if( count( $internal_link ) > 1 ) {
+			return '<div>Log Link Internal should only have 1 entry.</div>';
+		} else {
+			foreach( $internal_link as $val ) {
+				return '<a class="item log link" href="'.get_the_permalink( $val ).'">'.get_the_title( $val ).'</a>';
+			}
+		}
+		
+	}
+
 }
